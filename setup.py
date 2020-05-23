@@ -9,8 +9,8 @@ with open('README.rst', 'r', encoding='utf-8') as f:
 setup(
     name='casestyle',
     version='0.0.2',
-    keywords=['casestyle', 'inflection', 'stringcase', 'humps', 'snake case', 'camel case', 'pascal case', 'dash case', 'const case'],
-    description='String case style converter (snake_case, camelCase, PascalCase, dash-case, CONST_CASE can be converted to each other).',
+    keywords=['casestyle', 'inflection', 'stringcase', 'humps', 'snake case', 'camel case', 'pascal case', 'kebab case', 'macro case'],
+    description='String case style converter (snake_case, camelCase, PascalCase, kebab-case, MACRO_CASE can be converted to each other).',
     long_description=readme,
     author='zhoujin7',
     author_email='zhoujin7@foxmail.com',

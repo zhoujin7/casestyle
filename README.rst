@@ -1,13 +1,13 @@
 casestyle
 ==========
-String case style converter (snake_case, camelCase, PascalCase, dash-case, CONST_CASE can be converted to each other).
+String case style converter (snake_case, camelCase, PascalCase, kebab-case, MACRO_CASE can be converted to each other).
 
 * Include Functions:
     * casestyle.camelcase(string)
     * casestyle.pascalcase(string)
     * casestyle.snakecase(string)
-    * casestyle.dashcase(string)
-    * casestyle.constcase(string)
+    * casestyle.kebabcase(string)
+    * casestyle.macrocase(string)
     * casestyle.casepreprocess(string)
 
 * Other Useful Python String Methods:
@@ -65,24 +65,24 @@ Usage
     casestyle.snakecase('__foo_bar__') # => "__foo_bar__"
     casestyle.snakecase('$foo_bar') # => "$foo_bar"
 
-    casestyle.dashcase('foo bar baz') # => "foo-bar-baz"
-    casestyle.dashcase('fooBarBaz') # => "foo-bar-baz"
-    casestyle.dashcase('FooBarBaz') # => "foo-bar-baz"
-    casestyle.dashcase('foo_bar_baz') # => "foo-bar-baz"
-    casestyle.dashcase('foo-bar-baz') # => "foo-bar-baz"
-    casestyle.dashcase('FOO_BAR_BAZ') # => "foo-bar-baz"
-    casestyle.dashcase('foo _Bar___BAZ---Qux   quux') # => "foo-bar-baz-qux-quux"
-    casestyle.dashcase('_foo_bar') # => "_foo-bar"
-    casestyle.dashcase('__foo_bar__') # => "__foo-bar__"
-    casestyle.dashcase('$foo_bar') # => "$foo-bar"
+    casestyle.kebabcase('foo bar baz') # => "foo-bar-baz"
+    casestyle.kebabcase('fooBarBaz') # => "foo-bar-baz"
+    casestyle.kebabcase('FooBarBaz') # => "foo-bar-baz"
+    casestyle.kebabcase('foo_bar_baz') # => "foo-bar-baz"
+    casestyle.kebabcase('foo-bar-baz') # => "foo-bar-baz"
+    casestyle.kebabcase('FOO_BAR_BAZ') # => "foo-bar-baz"
+    casestyle.kebabcase('foo _Bar___BAZ---Qux   quux') # => "foo-bar-baz-qux-quux"
+    casestyle.kebabcase('_foo_bar') # => "_foo-bar"
+    casestyle.kebabcase('__foo_bar__') # => "__foo-bar__"
+    casestyle.kebabcase('$foo_bar') # => "$foo-bar"
 
-    casestyle.constcase('foo bar baz') # => "FOO_BAR_BAZ"
-    casestyle.constcase('fooBarBaz') # => "FOO_BAR_BAZ"
-    casestyle.constcase('FooBarBaz') # => "FOO_BAR_BAZ"
-    casestyle.constcase('foo_bar_baz') # => "FOO_BAR_BAZ"
-    casestyle.constcase('foo-bar-baz') # => "FOO_BAR_BAZ"
-    casestyle.constcase('FOO_BAR_BAZ') # => "FOO_BAR_BAZ"
-    casestyle.constcase('foo _Bar___BAZ---Qux   quux') # => "FOO_BAR_BAZ_QUX_QUUX"
-    casestyle.constcase('_foo_bar') # => "_FOO_BAR"
-    casestyle.constcase('__foo_bar__') # => "__FOO_BAR__"
-    casestyle.constcase('$foo_bar') # => "$FOO_BAR"
+    casestyle.macrocase('foo bar baz') # => "FOO_BAR_BAZ"
+    casestyle.macrocase('fooBarBaz') # => "FOO_BAR_BAZ"
+    casestyle.macrocase('FooBarBaz') # => "FOO_BAR_BAZ"
+    casestyle.macrocase('foo_bar_baz') # => "FOO_BAR_BAZ"
+    casestyle.macrocase('foo-bar-baz') # => "FOO_BAR_BAZ"
+    casestyle.macrocase('FOO_BAR_BAZ') # => "FOO_BAR_BAZ"
+    casestyle.macrocase('foo _Bar___BAZ---Qux   quux') # => "FOO_BAR_BAZ_QUX_QUUX"
+    casestyle.macrocase('_foo_bar') # => "_FOO_BAR"
+    casestyle.macrocase('__foo_bar__') # => "__FOO_BAR__"
+    casestyle.macrocase('$foo_bar') # => "$FOO_BAR"

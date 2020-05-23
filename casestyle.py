@@ -26,11 +26,11 @@ def snakecase(string):
     return ''
 
 
-def constcase(string):
+def macrocase(string):
     return snakecase(string).upper()
 
 
-def dashcase(string):
+def kebabcase(string):
     s_list = casepreprocess(string)
     if s_list:
         return '-'.join(s_list)
