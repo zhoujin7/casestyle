@@ -13,8 +13,8 @@ String case style converter (snake_case, camelCase, PascalCase, dash-case, CONST
 * Other Useful Python String Methods:
     * str.title()
     * str.capitalize()
-    * str.lowercase()
-    * str.uppercase()
+    * str.lower()
+    * str.upper()
     * str.swapcase()
 
 Installation
