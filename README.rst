@@ -2,7 +2,7 @@ casestyle
 ==========
 String case style converter (snake_case, camelCase, PascalCase, kebab-case, MACRO_CASE can be converted to each other).
 
-* Include Functions:
+* Functions:
     * casestyle.camelcase(string)
     * casestyle.pascalcase(string)
     * casestyle.snakecase(string)
